@@ -1,5 +1,11 @@
 # Kubernetes Study Notes
 
+- [Terminologies](#Terminologies)
+- [Steps](#Steps)
+    * [Setting up a Kubernete Cluster](#Setting up a Kubernete Cluster)
+    * [Deploying Docker to a Kubernete Cluster](#Deploying Docker to a Kubernete Cluster)
+        + [Notes](#Notes)
+
 ## Terminologies
 - Kubernetes (K8s)
     - a containers orchestration system
@@ -74,3 +80,11 @@
     - " A Pod is a Kubernetes abstraction that represents a group of one or more application containers (such as Docker), and some shared resources for those containers."
 
 ### Deploying Docker to a Kubernete Cluster
+1. `$ kubectl config get-contexts` return a list of cluster you are connected to
+    - context = your connection to your cluster(s)
+    - come from the end of the '.yaml' file 
+        - `$ less ~/.kube/config` to see what's inside the '.yaml' file 
+        - you can have multiple '.yaml' files or multiple contexts within a '.yaml' file 
+
+#### Notes
+- you can have multiple '.yaml' files or multiple contexts within a '.yaml' file 
